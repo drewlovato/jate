@@ -20,7 +20,10 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         title: "Hot Module Reloading",
-        template: "./src/index.html",
+        template: "./src/js/index.html",
+      }),
+      new InjectManifest({
+        swSrc: "./src-sw.js",
       }),
       new WebpackPwaManifest({
         // TODO: Create a manifest.json:
@@ -36,7 +39,7 @@ module.exports = () => {
           {
             src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
-            destination: path.join("assests", "icons"),
+            destination: path.join("images"),
           },
         ],
       }),
