@@ -2,7 +2,7 @@
 
 Just Another Text Editor
 
-### Just Another Text Editor - A Heroku A
+### Just Another Text Editor - A Heroku Application
 
 ## [Table-of-Contents](#table-of-contents)
 
